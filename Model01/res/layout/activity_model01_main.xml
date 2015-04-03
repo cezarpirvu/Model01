@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="ro.pub.cs.systems.pdsd.model01.Model01MainActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/introducere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+        
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:saveEnabled="false" >
+
+            <requestFocus />
+        </EditText>
+        
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:saveEnabled="false" />
+        <CheckBox
+	            android:id="@+id/checkbox"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:text="Remember me"
+	            android:layout_weight="1" />
+
+    </LinearLayout>
+    
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+	    <ScrollView
+	        android:id="@+id/scrollView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="20dp"
+	        android:layout_weight="1" >
+   
+	    </ScrollView>
+	    
+		 <Button
+	        android:id="@+id/submit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Submit"
+	        android:layout_gravity="center"
+	        android:layout_weight="1" />
+	    
+	</LinearLayout>
+
+</LinearLayout>
